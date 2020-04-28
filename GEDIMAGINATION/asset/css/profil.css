@@ -1,0 +1,191 @@
+/* ------------------------------------------------------------------- 
+    NAVIGATION HORIZONTALE
+------------------------------------------------------------------- */
+ 
+/* Paramètres généraux de la liste (ul). Toujours mes marges à zéro,
+ * le padding (marge intérieure) servira à dégager le texte en haut et en
+ * bas de 5 pixels tout en le décollant également de 1em du bord droit
+ * ce dernier point est indispensable pour Internet Explorer, comme on
+ * le verra pour ul#nav-box li a { }. 
+ * list-style-type : none; déclare que je ne place pas de puces devant 
+ * chaque item.
+*/
+ul#nav-box {    
+    margin-top:-7px;
+    margin-right:-7px;
+    margin-left:-7px;
+    padding : 5px 1em 10px 0;
+    list-style-type : none;
+    background: rgb(169,158,255);
+    background: linear-gradient(305deg, rgba(169,158,255,1) 5%, rgba(29,0,252,1) 69%, rgba(255,255,255,1) 87%); 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    color: #44445a;
+    font-weight : bold;
+    font-size : 0.9em;
+    text-align: right;
+}
+
+/* Paramètres des items. display : inline; donne comme instruction de ne
+* pas faire de saut de ligne pour chaque item. Je redonne également une
+* marge intérieure haute et basse de 5 pixels pour que les items occupent
+* toute la place verticale créée pour la liste
+*/
+ul#nav-box li {
+    display: inline;
+    padding : 5px 0;
+}
+
+/* On retrouve le padding haut et bas de 5 pixels (car sinon Internet Explorer
+* va n'en faire qu'à sa tête) et j'ajoute un espace latéral de 1em de chaque
+* côté des liens. J'indique également la couleur des caractères des liens et je
+* place un bord gauche continu et blanc de 1 pixel de large. text-decoration :
+* none; indique que je ne veux pas que les liens soient soulignés (ce qui serait
+* le cas par défaut.
+*/
+ul#nav-box li a {
+    padding : 5px 1em 5px 1em;
+    color: #4b4b69;
+    text-decoration: none;
+    border-left: 1px solid #fff;
+}
+
+/* Ici, ce qui se passe au survol des liens : changement de la couleur du fond,
+* de la couleur des caractères, je n'oublie pas de remettre à ce lien survolé le
+* bord gauche que j'ai défini pour les liens « au repos ».
+*/
+ul#nav-box li a:hover {
+    color:white;
+    border-left: 1px solid #fff;
+}
+
+.img_logo{
+    margin-right:73%;
+}
+
+
+    /* ------------------------------------------------------------------- 
+    EXPLIQUATION JEU GEDIMAT
+------------------------------------------------------------------- */
+
+.expliquation{
+    margin-top: 7%;
+    width:50%;
+    height:50%;
+    float:left;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+h2{
+    text-align:center;
+    color: rgb(95, 95, 109);
+    font-size:30px;
+}
+
+p{
+    color: rgb(107, 107, 107);
+    font-size: 25px;
+    float:left;
+    text-align:justify;
+    margin-right:5%;
+    margin-left:5%;
+    margin-top:-1px;
+}
+
+
+
+.profil_titre{
+
+    width:100%;
+    text-align:center;
+    padding-top:2px;
+    padding-bottom: 5px;
+    font-size:45px;
+    height:10%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(209,209,209,1) 54%, rgba(255,255,255,1) 100%); 
+    box-shadow: 0px -5px 30px 6px rgba(0,0,0,0.75);
+   
+    margin-bottom:3%;
+}
+
+.profil_body_personne{
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(209,209,209,1) 54%, rgba(255,255,255,1) 100%); 
+    box-shadow: 0px -5px 30px 6px rgba(0,0,0,0.75);
+    width:78%;
+    float:left;
+    height:40%;
+    font-size: 40px;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.profil_body_img{
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(209,209,209,1) 54%, rgba(255,255,255,1) 100%); 
+    padding-top:15px;
+    padding-bottom: 15px;
+    box-shadow: 0px -5px 30px 6px rgba(0,0,0,0.75);  
+    width:20%;
+    float:right;
+    font-size:25px;
+}
+.profil_entt{
+    width:40%;
+    float:left;
+    padding-top:20px;
+    border-bottom:1px solid black;
+    text-align:center;
+}
+
+.profil_desc{
+    width:55%;
+    padding-top:20px;
+    border-bottom:1px solid white;
+    text-align:center;
+    float:right;
+}
+
+.profil_boutton{
+    margin-top:30px;    
+    box-shadow: 0px -5px 30px 6px rgba(0,0,0,0.75);  
+    float:left;
+    width:30%;
+    margin-left:15%;
+}
+
+
+.profil_boutton:hover{
+    margin-top:30px;    
+    box-shadow: 0px -5px 30px 6px rgba(0,0,0,0.75);  
+    float:left;
+    width:32%;
+    background-color:lightblue;
+    margin-left:15%;
+}
+
+.profil_boutton_deja:hover{
+    box-shadow: 0px -5px 30px 6px rgba(0,0,0,0.75);  
+    margin-top:30px;        
+    float:right;
+    width:32%;
+    background-color:lightcoral;
+    margin-right:15%;
+}
+
+.profil_boutton_deja{
+    box-shadow: 0px -5px 30px 6px rgba(0,0,0,0.75);  
+    margin-top:30px;        
+    float:right;
+    width:30%;
+    margin-right:15%;
+}
+
+input{
+    margin-top:10%;
+    padding-top:15px;
+    padding-bottom: 15px;
+    box-shadow: 0px -5px 30px 6px rgba(0,0,0,0.75);  
+    width:20%;
+    float:right;
+    font-size:25px;
+}
