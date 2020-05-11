@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-$bdd = new PDO('mysql:host=localhost;dbname=gedimat','root','');
+include 'bdd.php';
 
 if(isset($_SESSION['id'])){
     $getid = intval($_GET['id']);
@@ -47,7 +47,7 @@ if(isset($_SESSION['id'])){
         </div>   
 
         <div class="inscription">
-            <h2> Connectez-vous pour poster vos créations </h2>
+            <h2> Modifiez vos informations</h2>
 
             <form action="" method="POST" class="formaction">
 

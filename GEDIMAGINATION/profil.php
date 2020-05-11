@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-$bdd = new PDO('mysql:host=localhost;dbname=gedimat','root','');
+include 'bdd.php';
 
 if(isset($_SESSION['id'])){
 
@@ -124,12 +124,12 @@ if(isset($_POST['addimg_form'])) {
             
                 
                 <div class="profil_div">
-                    <div class="">Nombre de vote : </div>
+                    <div class="">Nombre de votes : </div>
                     <div class=""> <?php echo $nbvote; ?></div>
                 </div>
 
                 <div class="profil_div">
-                    <div class="">Notes moyenne attribuée : </div>
+                    <div class="">Note moyenne attribuée : </div>
                     <div class=""> <?php echo $moyenne;?> </div>
                 </div>
 

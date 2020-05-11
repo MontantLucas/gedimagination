@@ -1,6 +1,6 @@
 <?php 
 
-$bdd = new PDO('mysql:host=localhost;dbname=gedimat','root','');
+include 'bdd.php';
 if(isset($_POST['form_valider'])){
     if(!empty($_POST['nom']) AND !empty($_POST['prenom']) AND !empty($_POST['email']) AND !empty($_POST['mdp']) AND !empty($_POST['sexe'])){
         $nom = htmlspecialchars($_POST['nom']);

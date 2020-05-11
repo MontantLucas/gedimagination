@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$bdd = new PDO('mysql:host=localhost;dbname=gedimat','root','');
+include 'bdd.php';
 
 if(isset($_SESSION['id'])){
 
@@ -67,7 +67,7 @@ if(isset($_SESSION['id'])){
 
                 <div class="nb_vote">
                     <br><br>
-                    <h2> Nombre de vote : </h2> <h3> <?php echo $r[1] ?> </h3>
+                    <h2> Nombre de votes : </h2> <h3> <?php echo $r[1] ?> </h3>
                 </div>
 
                 <div class="vote_title">

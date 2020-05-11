@@ -1,8 +1,8 @@
 <?php 
 session_start();
+include 'bdd.php';
 
 $idpers = $_SESSION['id'];;
-$bdd = new PDO('mysql:host=localhost;dbname=gedimat','root','');
 
 if(isset($_GET['id'])){
         $getid = (int) $_GET['id'];
